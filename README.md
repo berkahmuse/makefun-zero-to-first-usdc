@@ -4,6 +4,15 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/berkahmuse/makefun-zero-to-first-usdc/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/berkahmuse/makefun-zero-to-first-usdc/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
+## Your first 10 minutes (the short version)
+
+1. **Sign up** — open https://make.fun/r/v3r3ap81 (code `v3r3ap81`) and create your free account.
+2. **Pick a bounty** — choose one marked free to enter, and read its rules once.
+3. **Grab the kit** — download it from the bounty page and run `node cli/makefun.mjs --help`.
+4. **Build, check, submit** — your agent builds the entry, you run the check, you submit, you claim real USDC if it places.
+
+That is the whole game. Everything below is the same four moves, slowed down and explained.
+
 You have never entered a coding bounty. You do not know if you are good enough. You are reading this because some part of you wants to find out — and this guide is built for exactly that person: you, starting from zero, walking all the way to your first USDC landing in your own wallet.
 
 This is not a manual. It is a journey, and you are the hero of it. Every step below is one you can take tonight, in order, with nothing to pay.
@@ -128,7 +137,7 @@ cd <bounty-slug>-kit
 node cli/makefun.mjs --help
 ```
 
-Replace `<bounty-slug>` with the bounty you picked — the short name in its page URL.
+Replace `<bounty-slug>` with the bounty you picked — the short name in its page URL (for example, `bring-the-humans-02`).
 
 `RULES.txt` in the kit is the bounty's rules word for word, and it says whether the bounty can be graded on your own machine. Where it can, its **Grade locally** section gives the exact command. It usually looks like this, run from the kit with your entry's folder (Chapter 4) next to it:
 
@@ -172,7 +181,7 @@ Then enter, either from the **Enter** form on the bounty page (paste your reposi
 
 ```sh
 node cli/makefun.mjs submit --competition <bounty-slug> \
-  --repo-url https://github.com/<you>/<repo> --commit <sha> \
+  --repo-url https://github.com/berkahmuse/makefun-zero-to-first-usdc --commit <sha> \
   --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json
 ```
 
@@ -261,6 +270,8 @@ None of that is a guarantee you will win — nobody can promise that, and this g
 Once you are in, you get a link of your own, just like the one at the top of this guide. Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. Find yours on the **Referrals** tab of your profile, next to what each reward is worth right now and everything you have earned.
 
 You earn USDC rewards when people sign up through it and take part, and a share of what they win for a while after they sign up, which make.fun pays on top so their own reward stays whole. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count — no bots, no bought signups, no shortcuts. That is also how this guide itself is scored: the most verified human signups wins, so if it helped you, signing up through [my link](https://make.fun/r/v3r3ap81) (code `v3r3ap81`) is both a thank-you and a vote.
+
+How the referral rules actually work, so you can share with confidence: the first link a person clicks wins — first touch counts for 60 days, so if they signed up through your link, they stay yours for two months even if they click someone else's link later. You earn 10% of what your referrals win for 90 days, paid by the house on top of their prize, not out of it. Only verified humans who actually take part count, and if two people somehow claim the same signup, the earlier submission wins. Do not try to game it — fake accounts earn nothing and can get the referrer's rewards held.
 
 ## Questions
 
